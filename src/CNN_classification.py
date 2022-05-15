@@ -34,8 +34,6 @@ import matplotlib.pyplot as plt
 # import argparse
 import argparse
 
-# import pandas
-import pandas as pd
 
 # define our model
 def mdl(learn_rate, dec_steps, dec_rate):
