@@ -17,6 +17,6 @@ To run the code:
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/cnn_classification.py -lr "learning rate of the model" -ds "decay steps of the model -dr "decay rate of the model -bs "batch size of the model" -e "epochs of the model" -vn "name of visualization to save" -rp "name of the report to save"```
-  - The outputs in ```out``` were created with the following: ```python src/CNN_classification.py -lr 0.01 -ds 10000 -dr 0.9 -bs 128 -e 10 -vn "cnn_classification.jpg" -rp "cnn_report.txt"```
+  - The outputs in ```out``` were created with the following: ```python src/cnn_classification.py -lr 0.01 -ds 10000 -dr 0.9 -bs 128 -e 10 -vn "cnn_classification.jpg" -rp "cnn_report.txt"```
 
 ## 4. Discussion of Results
