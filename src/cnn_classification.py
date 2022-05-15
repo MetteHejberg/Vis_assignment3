@@ -105,13 +105,13 @@ def train_model(model, X_train_norm, y_train, X_test_norm, y_test, b_size, eps):
     return H
 
 # define plotting function
-def plot_history(H, vis_name): 
+def plot_history(H, eps, vis_name): 
     plt.style.use("seaborn-colorblind")
 
     plt.figure(figsize=(12,6))
     plt.subplot(1,2,1)
-    plt.plot(np.arange(0, 10), H.history["loss"], label="train_loss")
-    plt.plot(np.arange(0, 10), H.history["val_loss"], label="val_loss", linestyle=":")
+    plt.plot(np.arange(0, eps), H.history["loss"], label="train_loss")
+    plt.plot(np.arange(0, eps), H.history["val_loss"], label="val_loss", linestyle=":")
     plt.title("Loss curve")
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
@@ -119,8 +119,8 @@ def plot_history(H, vis_name):
     plt.legend()
 
     plt.subplot(1,2,2)
-    plt.plot(np.arange(0, 10), H.history["accuracy"], label="train_acc")
-    plt.plot(np.arange(0, 10), H.history["val_accuracy"], label="val_acc", linestyle=":")
+    plt.plot(np.arange(0, eps), H.history["accuracy"], label="train_acc")
+    plt.plot(np.arange(0, eps), H.history["val_accuracy"], label="val_acc", linestyle=":")
     plt.title("Accuracy curve")
     plt.xlabel("Epoch")
     plt.ylabel("Accuracy")
@@ -166,7 +166,7 @@ def main():
     model = mdl(args["learn_rate"], args["dec_steps"], args["dec_rate"])
     X_train_norm, X_test_norm, y_train, y_test, label_names = load_process_data()
     H = train_model(model, X_train_norm, y_train, X_test_norm, y_test, args["b_size"], args["eps"])
-    fig = plot_history(H, args["vis_name"])
+    fig = plot_history(H, args["eps"], args["vis_name"])
     report_df = classification_rep(model, X_test_norm, y_test, args["rep_name"], label_names)
     
 if __name__ == "__main__":
