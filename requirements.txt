@@ -1,1 +1,15 @@
-
+Import the following libraries to run cnn_classification.py:
+- os 
+- sys
+- tensorflow
+- tensorflow.keras.applications.vgg16 import (preprocess_input, decode_predictions, VGG16)
+- tensorflow.keras.datasets import cifar10
+- tensorflow.keras.layers import (Flatten, Dense) 
+- tensorflow.keras.models import Model
+- tensorflow.keras.optimizers.schedules import ExponentialDecay
+- tensorflow.keras.optimizers import SGD
+- sklearn.preprocessing import LabelBinarizer
+- sklearn.metrics import classification_report
+- numpy
+- matplotlib.pyplot
+- argparse
