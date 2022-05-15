@@ -20,3 +20,4 @@ To run the code:
   - The outputs in ```out``` were created with the following: ```python src/cnn_classification.py -lr 0.01 -ds 10000 -dr 0.9 -bs 128 -e 10 -vn "cnn_classification.jpg" -rp "cnn_report.txt"```
 
 ## 4. Discussion of Results
+The loss and accuracy of the training and validation data follow each other quite closely, so the model is not overfitting on the training data. However, the model still only achieves around 50 % accuracy on the validation data which the parameters set to create the outputs in ```out```. 
