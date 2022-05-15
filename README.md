@@ -21,7 +21,7 @@ To run the code:
   - The outputs in ```out``` were created with the following: ```python src/cnn_classification.py -lr 0.01 -ds 10000 -dr 0.9 -bs 128 -e 20 -vn "cnn_classification.jpg" -rp "cnn_report.txt"```
 
 ## 4. Discussion of Results
-I played around with the different parameters can I found the code provided under ```Usage``` to be perform the best. 
+I played around with the different parameters can I found the code provided under ```Usage``` to be perform the best. The accuracy does not increase substantially beyond 20 epochs and the training and validation data start to diverge slightly.
 
 The loss and accuracy of the training and validation data follow each other quite closely, so the model is not overfitting on the training data. However, the model still only achieves 52 % accuracy on the validation data with the parameters set to create the outputs in ```out```. A slower learning rate and more epochs might improve performance, since it seems from how the validation data and the training data follow each other that the model is learning something, but could perhaps use more time. 
 
