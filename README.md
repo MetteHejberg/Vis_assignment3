@@ -22,4 +22,4 @@ To run the code:
 ## 4. Discussion of Results
 The loss and accuracy of the training and validation data follow each other quite closely, so the model is not overfitting on the training data. However, the model still only achieves around 50 % accuracy on the validation data which the parameters set to create the outputs in ```out```. 
 
-There are also big differences on how the model performs on the individual labels. Compare cats that has a 39% accuracy and ships that has 62. 
+There are also big differences on how the model performs on the individual labels. Compare cats that has a 39% accuracy and ships that has 63. Therefore, eventhough the model performs feature extract and we therefore do not need to reduce the images to 1-d arrays and convert to grayscale like in assignment 2, it is still difficult to correctly classify these images.
