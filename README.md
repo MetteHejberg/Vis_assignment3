@@ -1,6 +1,4 @@
 ## 1. Assignment 3 - Transfer learning + CNN classification
-
-## 2. Methods
 In this assignment, you are still going to work with the CIFAR10 dataset. However, this time, you are going to make build a classifier using transfer learning with a pretrained CNN like VGG16 for feature extraction. 
 
 Your ```.py``` script should minimally do the following:
@@ -10,6 +8,9 @@ Your ```.py``` script should minimally do the following:
 - Train a classifier 
 - Save plots of the loss and accuracy 
 - Save the classification report
+
+## 2. Methods
+This repository contains one script that performs image classification using the vgg16 model from tensorflow on the cifar10 dataset. In assignment 2, we saw that simpler models struggled to correctly classify the images in this dataset. vgg16 uses feature extraction and can take multiple array images with three color channels. We do therefore not need to reshape the data substantially, and therefore the model hopefully performs better.
 
 ## 3 Usage ```cnn_classification.py``` 
 To run the code:
