@@ -1,4 +1,6 @@
 ## 1. Assignment 3 - Transfer learning + CNN classification
+Link to repository: https://github.com/MetteHejberg/Vis_assignment3
+
 In this assignment, you are still going to work with the CIFAR10 dataset. However, this time, you are going to make build a classifier using transfer learning with a pretrained CNN like VGG16 for feature extraction. 
 
 Your ```.py``` script should minimally do the following:
